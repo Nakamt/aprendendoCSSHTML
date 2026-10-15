@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <!-- céu -->
+  <rect width="300" height="420" fill="#1b2a4a"/>
+  <!-- lua -->
+  <circle cx="230" cy="80" r="30" fill="#f2e6c9"/>
+  <!-- mar -->
+  <rect y="260" width="300" height="160" fill="#14507a"/>
+  <!-- barco -->
+  <polygon points="90,250 210,250 190,275 110,275" fill="#5a3a1e"/>
+  <line x1="150" y1="250" x2="150" y2="160" stroke="#3b2612" stroke-width="4"/>
+  <polygon points="152,165 152,240 200,240" fill="#e8dcc0"/>
+  <!-- título -->
+  <text x="150" y="350" font-family="Georgia, serif" font-size="38" fill="#f2e6c9" text-anchor="middle">ODISSEIA</text>
+  <text x="150" y="385" font-family="Georgia, serif" font-size="16" fill="#f2e6c9" text-anchor="middle">2026</text>
+</svg>
