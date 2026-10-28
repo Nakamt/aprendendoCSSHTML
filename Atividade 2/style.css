@@ -1,0 +1,93 @@
+/* Página toda */
+body {
+    background-color: #0b1d33;
+    color: #dddddd;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Títulos e subtítulos com a fonte do Google */
+h1, h2 {
+    font-family: 'Cinzel', serif;
+    color: #6fb3e0;
+}
+
+h1 {
+    color: crimson;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Cabeçalho e menu */
+header {
+    padding: 20px;
+    border-bottom: 3px solid crimson;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Caixas das seções */
+section {
+    margin: 20px;
+    padding: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: steelblue;
+    border-radius: 10px;
+}
+
+#elenco {
+    background-color: #13314f;
+}
+
+img {
+    border: 3px solid gold;
+    border-radius: 10px;
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+li {
+    padding: 4px;
+}
+
+.destaque {
+    color: crimson;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+}
