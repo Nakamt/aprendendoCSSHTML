@@ -1,0 +1,86 @@
+body {
+    background-color: #0b1d33;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: crimson;
+}
+
+/* Estilo das duas tabelas */
+table {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: #222222;
+}
+
+caption {
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #6fb3e0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #999999;
+}
+
+/* Tabela 1 */
+.col-etapa {
+    width: 10%;
+}
+
+.jornada th {
+    background-color: crimson;
+    color: white;
+}
+
+.jornada td {
+    text-align: left;
+}
+
+.jornada td:first-child {
+    text-align: center;
+}
+
+.jornada tbody tr:nth-child(even) {
+    background-color: #dbe9f5;
+}
+
+.jornada tfoot td {
+    text-align: center;
+    font-weight: bold;
+    background-color: #13314f;
+    color: gold;
+}
+
+/* Tabela 2 */
+.rotina {
+    border-width: 3px;
+    border-style: solid;
+    border-color: steelblue;
+}
+
+.rotina th {
+    width: 11%;
+    background-color: steelblue;
+    color: white;
+    border-color: white;
+}
+
+.rotina tbody th {
+    text-align: left;
+}
+
+.rotina td {
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}

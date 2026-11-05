@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Tabelas</h1>
+
+    <!-- Tabela 1 -->
+    <table class="jornada">
+        <caption>A jornada de Odisseu</caption>
+
+        <colgroup>
+            <col class="col-etapa">
+            <col span="3">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Etapa</th>
+                <th>Lugar</th>
+                <th>Perigo</th>
+                <th>O que aconteceu</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ilha dos Ciclopes</td>
+                <td>Polifemo prende os homens na caverna</td>
+                <td>Odisseu cega o ciclope e foge</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ilha de Éolo</td>
+                <td>Os homens abrem o saco dos ventos</td>
+                <td>O navio é jogado para longe de Ítaca</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ilha de Circe</td>
+                <td>Circe transforma os homens em porcos</td>
+                <td>Com ajuda de Hermes, Odisseu vence Circe</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td rowspan="2">No mar</td>
+                <td>O canto das sereias</td>
+                <td>Odisseu se amarra no mastro para não ir até elas</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Cila e Caríbdis</td>
+                <td>Cila pega seis homens do navio</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Ítaca</td>
+                <td>Os pretendentes no palácio</td>
+                <td>Odisseu vence os pretendentes e volta a ser rei</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">A viagem toda durou 10 anos</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Tabela 2 -->
+    <table class="rotina">
+        <caption>Minha rotina semanal</caption>
+
+        <thead>
+            <tr>
+                <th></th>
+                <th>DOM</th>
+                <th>SEG</th>
+                <th>TER</th>
+                <th>QUA</th>
+                <th>QUI</th>
+                <th>SEX</th>
+                <th>SAB</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>MANHÃ</th>
+                <td>Descanso</td>
+                <td colspan="5">Estágio</td>
+                <td>Dormir até tarde</td>
+            </tr>
+            <tr>
+                <th>TARDE</th>
+                <td>Almoço em família</td>
+                <td>Academia</td>
+                <td>Estudar</td>
+                <td>Academia</td>
+                <td>Estudar</td>
+                <td>Academia</td>
+                <td>Jogar com os amigos</td>
+            </tr>
+            <tr>
+                <th>NOITE</th>
+                <td>Ver um filme</td>
+                <td colspan="5">Faculdade</td>
+                <td>Sair com os amigos</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
