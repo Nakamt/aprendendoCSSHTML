@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- Aluno: Mitsuo Nakamura Sena -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens da Odisseia</title>
+    <link rel="icon" href="icon.jpg">
+
+    <!-- Fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0b1d33;
+            color: #dddddd;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Cabeçalho que fica preso no topo */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: #081526;
+            border-bottom: 3px solid crimson;
+        }
+
+        header h1 {
+            color: crimson;
+            font-size: 30px;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        a {
+            color: gold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Introdução com o pôster */
+        .intro {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro img {
+            width: 220px;
+            border: 3px solid gold;
+            border-radius: 10px;
+        }
+
+        .intro h2 {
+            color: #6fb3e0;
+            font-size: 32px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .titulo {
+            text-align: center;
+            color: #6fb3e0;
+            font-size: 28px;
+        }
+
+        /* Grade com os cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+        }
+
+        .card {
+            position: relative;
+            padding: 15px;
+            text-align: center;
+            background-color: #13314f;
+            border: 2px solid steelblue;
+            border-radius: 10px;
+            animation: aparecer 1s ease;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #0b1d33;
+        }
+
+        .card h3 {
+            color: crimson;
+            margin: 15px 0 10px;
+        }
+
+        .card p {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Etiqueta no canto da imagem */
+        .etiqueta {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            padding: 4px 10px;
+            background-color: gold;
+            color: #0b1d33;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #081526;
+        }
+
+        /* Animação dos cards aparecendo */
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Celular */
+        @media (max-width: 600px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .intro {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Odisseia</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#personagens">Personagens</a>
+            <a href="filme.html">O filme</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro" id="inicio">
+            <img src="poster.jpg" alt="Pôster do filme Odisseia com um guerreiro grego de capacete">
+            <div>
+                <h2>Os personagens da Odisseia</h2>
+                <p>A Odisseia é o poema de Homero que conta a volta de Odisseu para casa depois da Guerra de Troia. Em 2026 a história virou filme, dirigido por Christopher Nolan.</p>
+                <p>Aqui estão alguns dos personagens mais importantes da história.</p>
+            </div>
+        </section>
+
+        <section id="personagens">
+            <h2 class="titulo">Personagens</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <span class="etiqueta">Herói</span>
+                    <img src="odisseu.jpg" alt="Odisseu">
+                    <h3>Odisseu</h3>
+                    <p>Rei de Ítaca e herói da história. É conhecido por ser muito esperto, foi dele a ideia do cavalo de Troia.</p>
+                </article>
+
+                <article class="card">
+                    <span class="etiqueta">Rainha</span>
+                    <img src="penelope.jpg" alt="Penélope">
+                    <h3>Penélope</h3>
+                    <p>Esposa de Odisseu. Espera por ele durante 20 anos e engana os pretendentes que querem casar com ela.</p>
+                </article>
+
+                <article class="card">
+                    <span class="etiqueta">Príncipe</span>
+                    <img src="telemaco.jpg" alt="Telêmaco">
+                    <h3>Telêmaco</h3>
+                    <p>Filho de Odisseu e Penélope. Sai de Ítaca para procurar notícias do pai e depois ajuda ele a voltar ao trono.</p>
+                </article>
+
+                <article class="card">
+                    <span class="etiqueta">Deusa</span>
+                    <img src="atena.jpg" alt="Atena">
+                    <h3>Atena</h3>
+                    <p>Deusa da sabedoria. Protege Odisseu e o ajuda várias vezes durante a viagem, muitas vezes disfarçada.</p>
+                </article>
+
+                <article class="card">
+                    <span class="etiqueta">Vilão</span>
+                    <img src="antinoo.jpg" alt="Antínoo">
+                    <h3>Antínoo</h3>
+                    <p>O pior dos pretendentes de Penélope. Fica no palácio de Odisseu gastando tudo e planeja matar Telêmaco.</p>
+                </article>
+
+                <article class="card">
+                    <span class="etiqueta">Ciclope</span>
+                    <img src="polifemo.jpg" alt="Polifemo">
+                    <h3>Polifemo</h3>
+                    <p>Ciclope gigante, filho de Poseidon. Prende Odisseu e seus homens numa caverna, mas acaba sendo enganado.</p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#inicio">Voltar ao topo</a>
+    </footer>
+
+</body>
+
+</html>
