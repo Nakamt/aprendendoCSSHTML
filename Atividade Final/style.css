@@ -1,0 +1,381 @@
+/* Geral */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+    color: #e5e7eb;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Menu */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0b1220;
+    border-bottom: 2px solid #38bdf8;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #e5e7eb;
+}
+
+nav a.ativo {
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+#botao-tema {
+    padding: 6px 12px;
+    border: 1px solid #38bdf8;
+    border-radius: 20px;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    animation: aparecer 0.8s ease;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Página inicial */
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    min-height: 60vh;
+}
+
+.foto {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #38bdf8;
+    background-color: #1f2937;
+}
+
+.inicio h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#saudacao {
+    margin: 0;
+    font-size: 18px;
+}
+
+.cargo {
+    font-size: 20px;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.botao {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #38bdf8;
+    color: #111827;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+/* Página sobre */
+.caixa {
+    padding: 15px 20px;
+    background-color: #1f2937;
+    border-left: 4px solid #38bdf8;
+    border-radius: 8px;
+}
+
+.caixa h3 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    padding: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #374151;
+}
+
+th {
+    background-color: #38bdf8;
+    color: #111827;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #1f2937;
+}
+
+/* Página projetos */
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 20px;
+    background-color: #1f2937;
+    border-top: 4px solid #38bdf8;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.tecnologias {
+    font-size: 14px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* Página contato */
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+fieldset {
+    padding: 20px;
+    border: 1px solid #374151;
+    border-radius: 10px;
+}
+
+legend {
+    padding: 0 10px;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 16px;
+    color: inherit;
+    background-color: #111827;
+    border: 1px solid #374151;
+    border-radius: 8px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+}
+
+button[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111827;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: white;
+}
+
+#resposta {
+    text-align: center;
+    font-weight: bold;
+    color: #4ade80;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0b1220;
+    border-top: 2px solid #38bdf8;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Tema claro (ativado pelo botão) */
+body.claro {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+body.claro header,
+body.claro footer,
+body.claro .card,
+body.claro .caixa {
+    background-color: white;
+}
+
+body.claro h1,
+body.claro .logo,
+body.claro nav a {
+    color: #1f2937;
+}
+
+body.claro h2,
+body.claro a,
+body.claro nav a.ativo,
+body.claro .cargo,
+body.claro .tecnologias,
+body.claro legend {
+    color: #0369a1;
+}
+
+body.claro .botao {
+    color: #111827;
+}
+
+body.claro tbody tr:nth-child(even) {
+    background-color: #e5e7eb;
+}
+
+body.claro input,
+body.claro textarea {
+    background-color: white;
+}
+
+/* Animação */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .projetos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    .projetos {
+        grid-template-columns: 1fr;
+    }
+}

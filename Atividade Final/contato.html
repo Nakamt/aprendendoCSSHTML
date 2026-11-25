@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Mitsuo Nakamura</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <span class="logo">Mitsuo</span>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="contato.html" class="ativo">Contato</a>
+            <button id="botao-tema" onclick="trocarTema()">Mudar tema</button>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contato</h1>
+        <p>Você pode falar comigo pelo <a href="https://www.linkedin.com/in/mitsuo-nakamura-283b36386/" target="_blank">LinkedIn</a>, pelo e-mail <a href="mailto:mitsuo.nakamura@edu.unifil.br">mitsuo.nakamura@edu.unifil.br</a> ou mandar uma mensagem por aqui:</p>
+
+        <form id="formulario" onsubmit="enviarMensagem(event)">
+            <fieldset>
+                <legend>Envie uma mensagem</legend>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required minlength="3">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+        <p id="resposta"></p>
+    </main>
+
+    <footer>
+        <p>Mitsuo Nakamura Sena - 2026</p>
+        <p>
+            <a href="https://www.linkedin.com/in/mitsuo-nakamura-283b36386/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Nakamt" target="_blank">GitHub</a> |
+            <a href="mailto:mitsuo.nakamura@edu.unifil.br">E-mail</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
