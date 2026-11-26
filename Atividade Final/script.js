@@ -3,7 +3,7 @@ function trocarTema() {
     document.body.classList.toggle("claro");
 }
 
-// Mostra bom dia, boa tarde ou boa noite na página inicial
+// Mostra bom dia, boa tarde ou boa noite na pagina inicial
 function mostrarSaudacao() {
     let saudacao = document.getElementById("saudacao");
 
@@ -22,7 +22,7 @@ function mostrarSaudacao() {
     }
 }
 
-// Lista de projetos usada na página de projetos
+// Lista de projetos usada na pagina de projetos
 let projetos = [
     {
         titulo: "Projeto Santander",
@@ -67,7 +67,7 @@ function mostrarProjetos() {
     }
 }
 
-// Mostra uma mensagem depois de enviar o formulário
+// Mostra uma mensagem depois de enviar o formulario
 function enviarMensagem(evento) {
     evento.preventDefault();
 
